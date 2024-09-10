@@ -9,10 +9,11 @@ read -p "Enter your GitHub Token: " GITHUB_TOKEN
 
 # Install the network-agent package from GitHub
 # sudo pip install git+https://github.com/asadsamar1107/network-agent.git
-sudo pip install git+https://$GITHUB_TOKEN@github.com/asadsamar1107/network-agent.git
+sudo pip install git+https://$GITHUB_TOKEN@github.com/tachyonsecurity/network-agent.git
 
 
-NETWORK_AGENT_PATH=$(command -v network-agent)
+
+NETWORK_AGENT_PATH=$(which network-agent)
 P_Working_DIR=$(pwd)
 
 # check before  proceeding
